@@ -1,0 +1,2 @@
+cl.exe /c /EHsc /I C:\freeglut\include Emoji_9.cpp
+link.exe Emoji_9.obj /LIBPATH:C:\freeglut\lib\x64 /SUBSYSTEM:CONSOLE
