@@ -3,8 +3,7 @@
 
 int main(void)
 {
-
-    int x,y;
+    int x, y;
     int iRet;
 
     char opt, opt_division;
@@ -13,10 +12,10 @@ int main(void)
     printf("\n\n");
 
     printf("Enter value for 'X' : ");
-    scanf("%d",&x);
+    scanf("%d", &x);
 
     printf("Enter value for 'Y' : ");
-    scanf("%d",&y);
+    scanf("%d", &y);
 
     printf("Enter option in character: \n\n");
     printf(" 'A' or 'a' for addition : \n");
@@ -24,90 +23,82 @@ int main(void)
     printf(" 'M' or 'm' for multiplication : \n");
     printf(" 'D' or 'd' for division : \n\n");
 
-    printf("\n\n");
+    printf("Enter Option : ");
+    opt = getch();
 
-    switch(opt)
+    printf("%c\n\n", opt);
+
+    if(opt == 'A' || opt == 'a')
     {
+        iRet = x + y;
+        printf("Addition of x = %d and y = %d Gives result %d !!! \n\n", x, y, iRet);
+    }
+    else if(opt == 'S' || opt == 's')
+    {
+        if(x >= y)
+        {
+            iRet = x - y;
+            printf("Subtraction of x = %d and y = %d Gives result %d !!! \n\n", x, y, iRet);
+        }
+        else
+        {
+            iRet = y - x;
+            printf("Subtraction of y = %d and x = %d Gives result %d !!! \n\n", y, x, iRet);
+        }
+    }
+    else if(opt == 'M' || opt == 'm')
+    {
+        iRet = x * y;
+        printf("Multiplication of x = %d and y = %d Gives result %d !!! \n\n", x, y, iRet);
+    }
+    else if(opt == 'D' || opt == 'd')
+    {
+        printf("Enter option in Character : \n\n");
+        printf("'Q' or 'q' or '/' For Quotient Upon Division : \n");
+        printf("'R' or 'r' or '%%' For Remainder upon Division : \n");
 
-        case 'A':
-        case 'a':
-            iRet = x + y;
-            printf("Addition of x = %d and y = %d Gives result %d !!! \n\n",x,y,iRet);
-            break;
-        
-        case 'S':
-        case 's':
+        printf("Enter Option : ");
+        opt_division = getch();
+
+        printf("%c\n\n", opt_division);
+
+        if(opt_division == 'Q' || opt_division == 'q' || opt_division == '/')
+        {
             if(x >= y)
             {
-                iRet = x - y;
-                printf("Subtraction of x = %d and y = %d Gives result %d !!! \n\n",x,y,iRet);
+                iRet = x / y;
+                printf("Division of X = %d by Y = %d Gives Quotient = %d !!!\n\n", x, y, iRet);
             }
             else
             {
-                iRet = y - x;
-                printf("Subtraction of y = %d and x = %d Gives result %d !!! \n\n",y,x,iRet);
+                iRet = y / x;
+                printf("Division of Y = %d by X = %d Gives Quotient = %d !!!\n\n", y, x, iRet);
             }
-            break;
-
-        case 'M':
-        case 'm':
-            iRet = x * y;
-            printf("Multiplication of x = %d and y = %d Gives result %d !!! \n\n",x,y,iRet);
-            break;
-        
-        case 'D':
-        case 'd':
-            printf("Enter option in Character : \n\n");
-            printf("'Q' or 'q' or '/' For Quotient Upon Division : \n");
-            printf("'R' or 'r' or '%%' For Remainder upon Division : \n");
-
-            printf("Enter Option : ");
-            opt_division = getch();
-
-            switch(opt_division)
+        }
+        else if(opt_division == 'R' || opt_division == 'r' || opt_division == '%')
+        {
+            if(x >= y)
             {
-                case 'Q':
-                case 'q':
-                case '/':
-                    if(x >= y)
-                    {
-                        iRet = x / y;
-                        printf("Division of X = %d by Y = %d Gives quotient = %d !!!\n\n",x,y,iRet);
-                    }
-                    else
-                    {
-                        iRet = y / x;
-                        printf("Division of Y = %d and X = %d Gives Quotient = %d\n !!!\n\n",y,x,iRet);
-                    }
-                    break;
-
-                case 'R':
-                case 'r':
-                case '%':
-                    if(x >= y)
-                    {
-                        iRet = x % y;
-                        printf("Division of X = %d by Y = %d Gives Remainder = %d !!!\n\n",x,y,iRet);
-                    }
-                    else
-                    {
-                        iRet = y % x;
-                        printf("Division of Y = %d and X = %d Gives Remainder = %d\n !!!\n\n",y,x,iRet);
-                    }
-                    break;
-
-                default:
-                    printf("Invalid character %c entered for division !!! Please Try Again...\n\n");
-                    break;
+                iRet = x % y;
+                printf("Division of X = %d by Y = %d Gives Remainder = %d !!!\n\n", x, y, iRet);
             }
-            
-            break;
-        default:
-            printf("Invalid character %c entered for division !!! Please Try Again...\n\n");
-            break;
+            else
+            {
+                iRet = y % x;
+                printf("Division of Y = %d by X = %d Gives Remainder = %d !!!\n\n", y, x, iRet);
+            }
+        }
+        else
+        {
+            printf("Invalid character %c entered for division !!! Please Try Again...\n\n", opt_division);
+        }
+    }
+    else
+    {
+        printf("Invalid character %c entered !!! Please Try Again...\n\n", opt);
     }
 
-    printf("Switch Case Block Complete !!!\n");
+    printf("If-Else Block Complete !!!\n");
 
     return 0;
 }
