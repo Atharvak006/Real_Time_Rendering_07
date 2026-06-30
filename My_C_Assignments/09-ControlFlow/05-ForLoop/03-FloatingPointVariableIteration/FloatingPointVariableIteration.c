@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main(void)
+{   
+    float f;
+    float f_val = 1.7f;
+
+    printf("\n\n");
+
+    printf("Printing number %f to %f : \n\n",f_val,(f_val * 10.0f));
+
+    for(f = f_val; f <= (f_val * 10.0f); f=f+f_val)
+    {
+        printf("\t%f\n",f);
+    }
+
+    printf("\n\n");
+
+    return 0;
+}
