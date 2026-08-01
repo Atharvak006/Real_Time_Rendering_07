@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 struct MyData
 {
@@ -17,6 +18,8 @@ int main(void)
 
     struct MyData* pdata = NULL;
 
+    printf("\n\n");
+
     pdata = (struct MyData*)malloc(sizeof(struct MyData));
 
     if(pdata == NULL)
@@ -29,19 +32,19 @@ int main(void)
         printf("Memory allocated successfully\n");
     }
 
-    (*pdata).i = 30;
-    (*pdata).f = 11.45;
-    (*pdata).d = 1.2995;
+    pdata -> i = 30;
+    pdata -> f = 11.45;
+    pdata -> d = 1.2995;
 
     printf("\n\n");
     printf("Data Members of 'struct MyData' Are: \n\n");
-    printf("i = %d\n",(*pdata).i);
-    printf("f = %f\n",(*pdata).f);
-    printf("d = %lf\n",(*pdata).d);
+    printf("i = %d\n",pdata -> i);
+    printf("f = %f\n",pdata -> f);
+    printf("d = %lf\n",pdata -> d);
 
-    iSize = sizeof((*pdata).i);
-    fSize = sizeof((*pdata).f);
-    dSize = sizeof((*pdata).d);
+    iSize = sizeof(pdata -> i);
+    fSize = sizeof(pdata -> f);
+    dSize = sizeof(pdata -> d);
 
     printf("\n\n");
     printf("Sizes (in Bytes) of Data members of 'struct MyData' are: \n\n");
