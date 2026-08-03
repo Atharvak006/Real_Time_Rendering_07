@@ -1,3 +1,4 @@
+//Heasder files
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -34,6 +35,8 @@ int main(void)
 
     pdata -> i = 9;
     pdata -> ptr_i = &(pdata -> i);
+
+    //(*pdata).ptr_i = &((*pdata).i);
 
     pdata -> f = 11.45;
     pdata -> ptr_f = &(pdata -> f);
