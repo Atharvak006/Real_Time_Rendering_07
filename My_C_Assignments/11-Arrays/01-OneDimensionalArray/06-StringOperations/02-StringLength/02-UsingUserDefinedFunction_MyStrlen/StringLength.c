@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 #define MAX_STRING_LENGTH 512
 
@@ -18,7 +19,7 @@ int main(void)
     printf("%s\n",chArray);
 
     printf("\n\n");
-    iStringLength = MyStrlen(chArray);
+    iStringLength = MyStrLen(chArray);
     printf("Length of string is = %d characters !!!\n\n",iStringLength);
 
     return 0;
