@@ -22,7 +22,7 @@ int main(void)
     printf("Size of 2D integer array iArray_Two = %lu\n",sizeof(iArray_Two));
 
     printf("Number rows in 2D integer array iArray_Two = %lu\n",(sizeof(iArray_Two)/ sizeof(iArray_Two[0])));
-    Num_Rows_2D = (sizeof(iArray_Two) / sizeof(iArray_Two));
+    Num_Rows_2D = (sizeof(iArray_Two) / sizeof(iArray_Two[0]));
 
     printf("Number of elements (columns) in each row in 2D array = %lu\n",(sizeof(iArray_Two[0]) / sizeof(iArray_Two[0][0])));
 
@@ -35,7 +35,7 @@ int main(void)
 
     printf("\n\n");
 
-    printf("Size of 3D integer Array iArray_Three = %lu\n",(sizeof(iArray_Three)/sizeof(iArray_Three[0])));
+    printf("Size of 3D integer Array iArray_Three = %lu\n",sizeof(iArray_Three));
     Num_Rows_3D = (sizeof(iArray_Three) / sizeof(iArray_Three[0]));
 
     printf("Number of elements (columns) in one row in 3D integer array iArray_Three = %lu\n",(sizeof(iArray_Three[0]) / sizeof(iArray_Three[0][0])));

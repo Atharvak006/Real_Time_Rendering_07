@@ -10,7 +10,7 @@ struct MyPoint
 struct MyPointProperties
 {
     int quadrant;
-    char axis_location[10];
+    char axis_location[11];
 };
 
 struct MyPoint point;
@@ -70,7 +70,7 @@ int main(void)
         {
             point_properties.axis_location[0] = '\0';
 
-            if(point.x  && point.y > 0)
+            if(point.x > 0 && point.y > 0)
             {
                 point_properties.quadrant = 1;
             }

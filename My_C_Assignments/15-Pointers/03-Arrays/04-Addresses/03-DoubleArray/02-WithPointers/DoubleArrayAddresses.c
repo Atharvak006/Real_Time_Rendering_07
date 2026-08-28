@@ -9,7 +9,7 @@ int main(void)
 
     for(i = 0; i < 10; i++)
     {
-        dArray[i] = (float)(i+1) * 3.1221f;
+        dArray[i] = (double)(i+1) * 3.1221f;
     }
 
     ptr_dArray = dArray;

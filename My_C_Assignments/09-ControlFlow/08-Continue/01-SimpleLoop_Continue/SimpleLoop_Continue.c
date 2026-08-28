@@ -16,7 +16,7 @@ int main(void)
         }
         else
         {
-            printf("\t%d\n",i);
+            printf("\t%d\n",x);
         }
     }
 

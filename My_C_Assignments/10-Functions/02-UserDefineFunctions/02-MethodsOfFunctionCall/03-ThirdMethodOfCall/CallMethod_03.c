@@ -13,7 +13,7 @@ void Function_Country(void)
 {
     void Function_OfAMC(void);
 
-    Function_ofAMC();
+    Function_OfAMC();
 
     printf("\n\n");
 
@@ -22,7 +22,7 @@ void Function_Country(void)
     printf("\n\n");
 }
 
-void Function_ofAMC(void)
+void Function_OfAMC(void)
 {
     void Function_Surname(void);
 

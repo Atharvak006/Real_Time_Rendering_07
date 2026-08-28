@@ -10,7 +10,7 @@ struct MyPoint
 struct MyPointProperties
 {
     int quadrant;
-    char axis_location[10];
+    char axis_location[11];
 };
 
 int main(void)

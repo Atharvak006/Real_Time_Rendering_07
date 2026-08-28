@@ -4,7 +4,7 @@
 
 int main(void)
 {   
-    void MyStrcat(char[], char[]);
+    void MyStrCat(char[], char[]);
 
     char chArray_One[MAX_STRING_LENGTH];
     char chArray_Two[MAX_STRING_LENGTH];
@@ -27,6 +27,8 @@ int main(void)
     printf("The original Second String Entered By you (ie: 'chArray_Two[]') is : \n\n");
     printf("%s\n",chArray_Two);
 
+    MyStrCat(chArray_One, chArray_Two);
+    
     printf("\n\n");
     printf("*****AFTER CONCATENATION*****");
     printf("\n\n");

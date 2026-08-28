@@ -25,7 +25,7 @@ int main(void)
     printf("\n\n");
     printf("Member of Union u2 are: \n\n");
 
-    u1.i = 3;
+    u2.i = 3;
     printf("Members of union u2 are : \n\n");
 
     u2.f = 4.5f;

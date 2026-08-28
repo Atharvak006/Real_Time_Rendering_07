@@ -67,7 +67,7 @@ int main(void)
         {
             point_properties.axis_location[0] = '\0';
 
-            if(point.x  && point.y > 0)
+            if(point.x > 0 && point.y > 0)
             {
                 point_properties.quadrant = 1;
             }

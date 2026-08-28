@@ -25,9 +25,10 @@ int main(void)
     printf("Number of rows in two dimensional (2D) character Array (string Array) is = %d\n\n",strArray_Num_Rows);
  
     strArray_Num_Columns = sizeof(strArray[0]) / char_size;
-    printf("Number of rows in two dimensional (2D) character Array (string Array) is = %d\n\n",strArray_Num_Rows);
+    printf("Number of columns in two dimensional (2D) character Array (String Array) is = %d\n\n",
+       strArray_Num_Columns);    
     
-    strArray_Num_Elements = strArray_Num_Rows * strArray_Num_Columns;
+       strArray_Num_Elements = strArray_Num_Rows * strArray_Num_Columns;
     printf("Maximum number of elements (CHARACTER) in two dimensional 2D character array (string Array) is = %d\n\n",strArray_Num_Elements);
 
 

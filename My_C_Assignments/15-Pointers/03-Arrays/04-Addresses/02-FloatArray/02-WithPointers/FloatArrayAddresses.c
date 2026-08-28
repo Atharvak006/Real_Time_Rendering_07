@@ -26,7 +26,7 @@ int main(void)
     printf("Elements of the float array: \n\n");
     for(i = 0; i < 10; i++)
     {
-        printf("fArray[%d] = %d\t\t Address = %p\n",i,*(ptr_fArray+i), (ptr_fArray+i));
+        printf("fArray[%d] = %f\t\t Address = %p\n",i,*(ptr_fArray+i), (ptr_fArray+i));
     }
 
     printf("\n\n");

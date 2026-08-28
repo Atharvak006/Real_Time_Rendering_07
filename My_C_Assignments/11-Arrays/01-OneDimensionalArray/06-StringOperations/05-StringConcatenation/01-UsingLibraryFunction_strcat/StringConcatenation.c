@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 #define MAX_STRING_LENGTH 512
 
@@ -19,7 +20,7 @@ int main(void)
     printf("\n\n");
 
     printf("The original first string entered by you (ie :) 'chArray_One[]' is \n\n");
-    printf("%s\n",chArray_Two);
+    printf("%s\n",chArray_One);
 
     strcat(chArray_One,chArray_Two);
 
@@ -27,6 +28,10 @@ int main(void)
     printf("*****AFTER CONCATENATION*****");
     printf("\n\n");
     printf("'chArray_One[]' is : \n\n");
+    
+
+    printf("'chArray_One[]' is:\n\n");
+    printf("%s\n", chArray_One);
     
     printf("\n\n");
     printf("'chArray_Two[]' is :\n\n");

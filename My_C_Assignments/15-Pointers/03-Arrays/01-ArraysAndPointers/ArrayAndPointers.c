@@ -32,7 +32,7 @@ int main(void)
     printf("\n\n");
     printf("Double Array Elements and the addresses they occupy are as follows: \n\n");
     printf("dArray[0] = %lf \t at address: %p\n",*(dArray + 0), (dArray + 0));
-    printf("dArray[1] = %lf \t at address: %p\n",*(dArray + 2), (dArray + 1));
+    printf("dArray[1] = %lf \t at address: %p\n",*(dArray + 1), (dArray + 1));
     printf("dArray[2] = %lf \t at address: %p\n",*(dArray + 2), (dArray + 2));
     
 

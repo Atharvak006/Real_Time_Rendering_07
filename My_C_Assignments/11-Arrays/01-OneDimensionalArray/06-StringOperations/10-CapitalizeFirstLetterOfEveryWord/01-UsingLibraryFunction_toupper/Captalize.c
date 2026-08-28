@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdio.h>
+#include<ctype.h>
 
 #define MAX_STRING_LENGTH 512
 
@@ -29,7 +29,7 @@ int main(void)
             chArray_CapitalizedFirstLetterOfEveryWord[j] = toupper(chArray[i]);
         }
 
-        else if(chArray[i] == '0')
+        else if(chArray[i] == ' ')
         {
             chArray_CapitalizedFirstLetterOfEveryWord[j] = chArray[i];
             chArray_CapitalizedFirstLetterOfEveryWord[j+1] = toupper(chArray[i+1]);

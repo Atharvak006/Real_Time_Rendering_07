@@ -44,7 +44,7 @@ int main(void)
     char str[MAX_STRING_LENGTH];
     int i, j, actual_string_length = 0;
 
-    printf('\n\n');
+    printf("\n\n");
 
     printf("Enter a string: \n");
     gets_s(str,MAX_STRING_LENGTH);

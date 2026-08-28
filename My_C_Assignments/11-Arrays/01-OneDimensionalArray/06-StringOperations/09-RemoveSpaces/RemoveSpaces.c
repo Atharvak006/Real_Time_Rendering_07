@@ -57,7 +57,7 @@ int MyStrLen(char str[])
             break;
         }
         else{
-            string_length;
+            string_length++;
         }
     }
 

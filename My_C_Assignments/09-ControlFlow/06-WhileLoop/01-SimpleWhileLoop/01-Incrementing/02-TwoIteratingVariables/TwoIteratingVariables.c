@@ -11,7 +11,7 @@ int main(void)
     a = 1;
     b = 10;
 
-    while(a <= 10, b <= 100)
+    while(a <= 10 , b <= 100)
     {
         printf("\t %d \t %d\n",a,b);
         a++;

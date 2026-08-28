@@ -73,7 +73,7 @@ void Function_Surname(void)
     printf("Kshirsagar");
 }
 
-void Function_ofAMC(void)
+void Function_OfAMC(void)
 {
     printf("\n\n");
 

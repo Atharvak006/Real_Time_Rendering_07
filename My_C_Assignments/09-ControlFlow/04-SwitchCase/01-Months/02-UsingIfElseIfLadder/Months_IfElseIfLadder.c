@@ -45,12 +45,12 @@ int main(void)
     else if(num_month == 11) 
         printf("Month number %d is November !!!\n\n",num_month);
         
-    if(num_month == 12) 
+    else if(num_month == 12) 
         printf("Month number %d is December !!!\n\n",num_month);
         
     else
         printf("Invalid Month Number %d Entered !!! Please try Again...\n\n",num_month);
-            
+
 
     printf("If - else if - Else ladder complete !!!\n");
 

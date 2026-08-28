@@ -3,7 +3,7 @@
 int main(void)
 {
     char cArray[10];
-    int *ptr_cArray = NULL;
+    char *ptr_cArray = NULL;
     int i;
 
 

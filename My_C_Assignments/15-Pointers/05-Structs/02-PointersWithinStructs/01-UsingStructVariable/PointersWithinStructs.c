@@ -29,7 +29,7 @@ int main(void)
     printf("\n\n");
 
     printf("i = %d\n",*(data.ptr_i));
-    printf("Address of i = %p\n",data.ptr_f);
+    printf("Address of i = %p\n",data.ptr_i);
 
     printf("f = %f\n",*(data.ptr_f));
     printf("Address of f = %p\n",data.ptr_f);

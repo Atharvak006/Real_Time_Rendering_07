@@ -22,7 +22,7 @@ int main(void)
 
     printf("\n\n");
     printf("The Reversed String (ie: 'chArray_Reverse[]') is : \n\n");
-    printf("%s\n",strrev(chArray_Original));
+     printf("%s\n", chArray_Reversed);
 
     return(0);
 }
@@ -36,7 +36,7 @@ void MyStrrev(char str_destination[], char str_source[])
     int i,j, len;
 
 
-    iStringLength = MyStrlen(str_source);
+    iStringLength = MyStrLen(str_source);
 
     len = iStringLength - 1;
 

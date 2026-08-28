@@ -12,7 +12,7 @@ int main(void)
     printf("\n\n");
     printf("*****Before copy_ptr = ptr*****\n\n");
     printf("num = %d\n",num);
-    printf("&num = %d\n",&num);
+    printf("&num = %p\n",&num);
     printf("*(&num) = %d\n",*(&num));
     printf("ptr = %d\n",ptr);
     printf("*ptr = %d\n",*ptr);

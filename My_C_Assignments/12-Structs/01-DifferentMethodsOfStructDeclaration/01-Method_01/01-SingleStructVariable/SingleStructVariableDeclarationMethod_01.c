@@ -19,7 +19,7 @@ int main(void)
     data.i = 30;
     data.f = 11.45f;
     data.d = 1.2995;
-
+    
     // Displaying Values of the data members of 'struct MyData'
     printf("\n\n");
     printf("Data members of 'struct Mydata' ARE: \n\n"); 

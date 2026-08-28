@@ -12,7 +12,7 @@ int main(void)
 
     printf("\n\n");
     printf("Enter string: ");
-    get_s(string, MAX_STRING_LENGTH);
+    gets_s(string, MAX_STRING_LENGTH);
 
     replaced_string = ReplaceVowelsWithHashSymbol(string);
 

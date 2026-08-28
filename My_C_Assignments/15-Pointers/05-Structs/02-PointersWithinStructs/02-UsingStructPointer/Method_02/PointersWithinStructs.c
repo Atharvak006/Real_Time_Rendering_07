@@ -45,7 +45,7 @@ int main(void)
     pdata -> ptr_d = &(pdata -> d);
 
     printf("i = %d\n",*(pdata->ptr_i));
-    printf("Address of i = %p\n",pdata->ptr_f);
+    printf("Address of i = %p\n",pdata->ptr_i);
 
     printf("f = %f\n",*(pdata->ptr_f));
     printf("Address of f = %p\n",pdata->ptr_f);
