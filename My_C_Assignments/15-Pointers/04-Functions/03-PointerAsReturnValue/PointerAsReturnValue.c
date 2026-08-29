@@ -21,6 +21,8 @@ int main(void)
         printf("ReplaceVowelWithHashSymbol() function has failed !!! Exiting Now..\n\n");
         exit(0);
     }
+    
+    printf("Replaced string: %s\n", replaced_string);
 
     if(replaced_string){
         free(replaced_string);

@@ -25,7 +25,9 @@ int main(void)
     printf(" 'D' or 'd' for division : \n\n");
 
     printf("\n\n");
-
+    printf("Enter Option : ");
+    scanf(" %c", &opt);
+    
     switch(opt)
     {
 
