@@ -131,6 +131,38 @@ int main(void)
         scanf(" %c",(ptr_cArray + i));
     }
 
+    // Display
+    printf("\n\n");
+    printf("The integer array entered by you: \n");
+
+    for(i = 0; i < intArrayLength; i++)
+    {
+        printf(" %d \t \t at address : %p\n",*(ptr_iArray + i),(ptr_iArray + i));
+    }
+
+    printf("\n\n");
+    printf("The float array entered by you: \n");
+
+    for(i = 0; i < floatArrayLength; i++)
+    {
+        printf(" %f \t \t at address : %p\n",*(ptr_fArray + i),(ptr_fArray + i));
+    }
+
+    printf("\n\n");
+    printf("The double array entered by you: \n");
+
+    for(i = 0; i < doubleArrayLength; i++)
+    {
+        printf(" %lf \t \t at address : %p\n",*(ptr_dArray + i),(ptr_dArray + i));
+    }
+
+    printf("\n\n");
+    printf("The character array entered by you: \n");
+
+    for(i = 0; i < charArrayLength; i++)
+    {
+        printf(" %c \t \t at address : %p\n",*(ptr_cArray + i),(ptr_cArray + i));
+    }
 
     /// FREEING MEMORY OCCUPIED BY ARRAYS (IN REVERSE ORDER OF ALLOCATION)
 
@@ -169,4 +201,6 @@ int main(void)
         printf("\n");
         printf("Memory of int freed");
     }
+
+    return 0;
 }

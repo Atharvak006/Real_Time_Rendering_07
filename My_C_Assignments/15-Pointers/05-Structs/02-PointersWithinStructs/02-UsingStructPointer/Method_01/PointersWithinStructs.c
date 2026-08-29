@@ -16,6 +16,9 @@ struct MyData
 int main(void)
 {   
     struct MyData* pdata;
+    
+    struct MyData data;
+    pdata = &data;
 
     (*pdata).i = 9;
     (*pdata).ptr_i = &(*pdata).i;
