@@ -1,0 +1,2 @@
+Program Started Successfully
+ARK: WinMain: Initialize function SucceededProgram Terminated Successfully
