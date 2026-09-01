@@ -99,3 +99,10 @@ struct MyData AddStructMembers(struct MyData md_one, struct MyData md_two, struc
 
     return (answer);
 }
+
+/*
+apn ithe while() loop use karto karan:
+    suppose apn input dila  - a ani enter kela tar internally te a\n asa consider kela jata
+    But the \n (Enter) is still waiting in the input.
+    So before using getch(), you do: while(getchar() != '\n');
+*/
