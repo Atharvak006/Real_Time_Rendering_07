@@ -64,7 +64,7 @@ LRESULT CALLBACK WndProc(HWND,UINT,WPARAM,LPARAM);
 
 // Global Variable Declarations
 
-int iPaintFlag = -1;
+int iPaintFlag = -1; // we can also use this static int iPaintflag inside wndproc...but not without static
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int iCmdShow)
 {
