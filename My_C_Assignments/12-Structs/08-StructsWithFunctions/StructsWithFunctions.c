@@ -30,7 +30,6 @@ int main(void)
 
     printf("\n\n");
     printf("Enter character value of 'struct MyData data1': ");
-    while(getchar() != '\n');
     data1.c = getch();
     printf("%c",data1.c);
 
@@ -47,7 +46,6 @@ int main(void)
 
     printf("\n\n");
     printf("Enter character value for 'f' of 'struct MyData data2': ");
-    while(getchar() != '\n');
     data2.c = getch();
     printf("%c",data2.c);
 
@@ -64,7 +62,6 @@ int main(void)
 
     printf("\n\n");
     printf("Enter character value for 'f' of 'struct MyData data3': ");
-    while(getchar() != '\n');
     data3.c = getch();
     printf("%c",data3.c);
     
@@ -99,10 +96,3 @@ struct MyData AddStructMembers(struct MyData md_one, struct MyData md_two, struc
 
     return (answer);
 }
-
-/*
-apn ithe while() loop use karto karan:
-    suppose apn input dila  - a ani enter kela tar internally te a\n asa consider kela jata
-    But the \n (Enter) is still waiting in the input.
-    So before using getch(), you do: while(getchar() != '\n');
-*/
