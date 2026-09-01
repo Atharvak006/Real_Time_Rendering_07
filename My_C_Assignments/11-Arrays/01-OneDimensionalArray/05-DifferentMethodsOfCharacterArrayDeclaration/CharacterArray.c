@@ -10,7 +10,7 @@ int main(void)
 
     char chArray_4[] = "To";
 
-    char chArray_5[] = "REAL TIME RENDERING BATCH OF 2020 - 21";
+    char chArray_5[] = "REAL TIME RENDERING BATCH OF 2026 - 27";
 
     char chArray_WithoutNULLTerminator[] = {'H','e','l','l','o'};
 
