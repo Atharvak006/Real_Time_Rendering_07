@@ -118,3 +118,6 @@ void MyGetString(char str[], int str_size)
 
     str[i] = '\0';
 }
+/*
+    /r mhanje carriage return.
+*/

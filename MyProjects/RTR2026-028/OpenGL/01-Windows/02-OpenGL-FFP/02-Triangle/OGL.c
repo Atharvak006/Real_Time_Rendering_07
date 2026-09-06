@@ -355,10 +355,11 @@ void resize(int Width, int Height)
     //code
     if (Height <= 0)
         Height = 1;
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
 
 	glViewport(0, 0, (GLsizei)Width, (GLsizei)Height);
+
+    glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
 
 }
 
@@ -366,14 +367,18 @@ void render(void)
 {
     //code                       
     glClear(GL_COLOR_BUFFER_BIT);
+    	
+    glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 
-    glColor3f(1.0f,1.0f,1.0f);
     glBegin(GL_TRIANGLES);
 
     glColor3f(1.0f, 0.0f, 0.0f);
 	glVertex3f(0.0f, 1.0f, 0.0f);
+
 	glColor3f(0.0f, 1.0f, 0.0f);
 	glVertex3f(-1.0f, -1.0f, 0.0f);
+
 	glColor3f(0.0f, 0.0f, 1.0f);
 	glVertex3f(1.0f, -1.0f, 0.0f);
 
