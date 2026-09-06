@@ -133,6 +133,6 @@ void MyGetString(char str[], int str_size)
     }
     else
     {
-        str[i] = '\0';
+        str[i] = '\0'; // He check karaychay
     }
 }
