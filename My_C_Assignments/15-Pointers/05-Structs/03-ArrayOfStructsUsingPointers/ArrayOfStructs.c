@@ -43,7 +43,7 @@ int main(void)
         printf("*********** Data entry for employee number %d **********\n", (i + 1));
 
         printf("\nEnter employee Name: ");
-        fflush(stdin);
+        fflush(stdin); // Flush karne mhanje (input mhanje keyboard input la clean karun ghene) used in file opereations
         MyGetString(pEmployeeRec[i].name, NAME_LENGTH);
 
         printf("\n\nEnter employee's age (in years): ");
@@ -133,6 +133,6 @@ void MyGetString(char str[], int str_size)
     }
     else
     {
-        str[i - 1] = '\0';
+        str[i] = '\0';
     }
 }
